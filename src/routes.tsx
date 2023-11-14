@@ -5,6 +5,7 @@ import {
   MdHome,
   MdLock,
   MdOutlineShoppingCart,
+  MdEvent,
 } from "react-icons/md";
 
 // Admin Imports
@@ -22,8 +23,14 @@ const routes: IRoute[] = [
   {
     name: "Main Dashboard",
     layout: "/admin",
-    path: "/default",
+    path: "/main-dashboard",
     icon: <Icon as={MdHome} width="20px" height="20px" color="inherit" />,
+  },
+  {
+    name: "Event Category",
+    layout: "/admin",
+    path: "/event-category",
+    icon: <Icon as={MdEvent} width="20px" height="20px" color="inherit" />,
   },
   {
     name: "NFT Marketplace",
